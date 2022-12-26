@@ -5,29 +5,171 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
   
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      background-color: hsl(217, 54%, 11%);
+      display: flex;
+      align-items: center;     
+      flex-direction: column;
+    }
+
+    .container {
+      background-color: hsl(216, 50%, 16%);
+      width: 190px;
+      height: 320px;
+      margin-top: 9vh;
+      border-radius: 2vh;
+    }
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .img {
+      width: 40vh;
+      border-radius: 1vh;  
+      margin-top: 3.2vh;    
+    }
+
+    .user-container {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-direction: row;
+      margin-top: 3vh;
+      margin-left: 4vh;
+    }
+
+    .user-img {
+      width: 9%;
+      border: solid 1px white;
+      border-radius: 50%;
+    }
+
+    .user-info {
+      font-family: 'Outfit', sans-serif;
+      font-size: 9px;
+      color: white;
+      margin-left: 2vh;    
+    }
+
+    .first-text { 
+      font-family: 'Outfit', sans-serif;
+      font-size: 12px; 
+      color: white;
+      margin-left: 4vh;
+      margin-top: 4vh;
+    }
+
+    .first-text:hover { 
+      color: hsl(228, 45%, 44%); 
+    }
+
+    .second-text {
+      font-family: 'Outfit', sans-serif;
+      font-size: 9px; 
+      color: white;
+      margin-left: 4vh;
+      margin-top: 2vh;
+    }
+
+    .third-text {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .ethereum {
+      width: 1.5vh;
+    }
+
+    .clock {
+      width: 2.3vh;
+      margin-right: 0.5vh;
+    }
+
+    .ethereum-text {
+      font-family: 'Outfit', sans-serif;
+      font-size: 8px; 
+      color: hsl(178, 100%, 50%);
+      margin-left: 1vh;
+      }
+
+      .NFT-value {
+        display: flex;
+        margin-left: 4vh;
+        margin-top: 3vh;
+      }
+
+      .days-left {
+        font-family: 'Outfit', sans-serif;
+        font-size: 8px; 
+        color: white;
+        margin-top: 3vh;
+        margin-right: 4vh;
+        display: flex;
+      }
+
+      .line {
+        width: 38vh;
+        margin-top: 4vh;
+        border: solid 0.1vh grey ;
+      }
+      .dev-info {
+        font-family: 'Outfit', sans-serif;
+        font-size: 7.5px; 
+        color: white;
+        margin-top: 6vh;
+
+      }
+
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="img-container">
+      <img class="img" src="./images/image-equilibrium.jpg" alt="" srcset="">
+    </div>
+    <div class="first-text">
+      Equilibrium #3429
+    </div>
+    <div class="second-text">
+      Our Equilibrium collection promotes balance and calm.
+    </div>
+    <div class="third-text">
+      <div class="NFT-value">
+        <img class="ethereum" src="./icons/icon-ethereum.svg" alt="">
+        <div class="ethereum-text">
+          0,041ETH
+        </div>
+      </div>
+      <div class="days-left">
+        <img class="clock" src="./icons/icon-clock.svg" alt="">
+        3 days left
+      </div>      
+    </div>  
 
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
+    <hr class="line"/>
+    
+    <div class="user-container">
+      <img class="user-img" src="./images/image-avatar.png" alt="">
+      <div class="user-info">
+        Creation of Jules Wyvern
+      </div>
+    </div>    
+  </div>  
+  <div class="dev-info">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Gastonfauret/Frontend-Mentor-NFT-preview-card-component">Gastonfauret</a>.
   </div>
   <script src="./index.js"></script>
 </body>
