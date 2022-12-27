@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap" rel="stylesheet">
 
   
   <title>Frontend Mentor | NFT preview card component</title>
@@ -23,10 +23,11 @@
 
     .container {
       background-color: hsl(216, 50%, 16%);
-      width: 190px;
-      height: 320px;
-      margin-top: 9vh;
+      width: 40vh;
+      height: 65vh;
+      margin-top: 15vh;
       border-radius: 2vh;
+      box-shadow: 5px 5px 20px 20px hsl(235, 51%, 11%);
     }
 
     .img-container {
@@ -35,50 +36,33 @@
     }
 
     .img {
-      width: 40vh;
+      width: 35vh;
       border-radius: 1vh;  
-      margin-top: 3.2vh;    
-    }
+      margin-top: 2.5vh;
+    }    
 
-    .user-container {
-      display: flex;
-      align-items: center;
-      align-content: center;
-      flex-direction: row;
-      margin-top: 3vh;
-      margin-left: 4vh;
+    .img:hover {
+      cursor: pointer;
     }
-
-    .user-img {
-      width: 9%;
-      border: solid 1px white;
-      border-radius: 50%;
-    }
-
-    .user-info {
+      .first-text { 
       font-family: 'Outfit', sans-serif;
-      font-size: 9px;
+      font-size: 18px; 
       color: white;
-      margin-left: 2vh;    
-    }
-
-    .first-text { 
-      font-family: 'Outfit', sans-serif;
-      font-size: 12px; 
-      color: white;
-      margin-left: 4vh;
-      margin-top: 4vh;
+      margin-left: 2.5vh;
+      margin-top: 2vh;
     }
 
     .first-text:hover { 
-      color: hsl(228, 45%, 44%); 
+      color: hsl(178, 100%, 50%);
+      cursor: pointer;
     }
 
     .second-text {
       font-family: 'Outfit', sans-serif;
-      font-size: 9px; 
-      color: white;
-      margin-left: 4vh;
+      font-weight:lighter;
+      font-size: 18px; 
+      color: hsl(215, 51%, 70%);
+      margin-left: 2.5vh;
       margin-top: 2vh;
     }
 
@@ -86,49 +70,94 @@
       display: flex;
       justify-content: space-between;
       flex-direction: row;
+      align-items: center;
+      margin-top: 2.5vh;
     }
 
     .ethereum {
-      width: 1.5vh;
-    }
-
-    .clock {
-      width: 2.3vh;
-      margin-right: 0.5vh;
-    }
+      width: 1vh;
+      height: 1.5vh;
+    } 
 
     .ethereum-text {
       font-family: 'Outfit', sans-serif;
-      font-size: 8px; 
+      font-size: 14px; 
       color: hsl(178, 100%, 50%);
       margin-left: 1vh;
       }
 
       .NFT-value {
         display: flex;
-        margin-left: 4vh;
-        margin-top: 3vh;
+        margin-left: 2.5vh;
+        align-items: center;
+      }
+
+      .clock {
+        width: 2.1vh;
+        margin-right: 0.5vh;
       }
 
       .days-left {
         font-family: 'Outfit', sans-serif;
-        font-size: 8px; 
-        color: white;
-        margin-top: 3vh;
-        margin-right: 4vh;
+        font-size: 14px; 
+        color: hsl(215, 51%, 70%);
+        margin-right: 2.5vh;
         display: flex;
       }
 
       .line {
-        width: 38vh;
-        margin-top: 4vh;
-        border: solid 0.1vh grey ;
+        width: 35vh;
+        margin-top: 2.5vh;
+        border: solid 0.1vh hsl(215, 32%, 27%) ;
       }
+
+      .user-container {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+        margin-top: 2vh;
+        margin-left: 3vh;
+      }
+  
+      .user-img {
+        width: 9%;
+        border: solid 1px white;
+        border-radius: 50%;
+      }
+
+      .user-img:hover {
+        border: solid 1px hsl(178, 100%, 50%);
+        cursor: pointer;
+      }
+  
+      .user-info {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+        color: hsl(215, 51%, 70%);
+        margin-left: 2vh;    
+      }
+
+      .user-name {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        margin-left: 0.5vh; 
+        color: white;
+      }
+
+      .user-name:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+      }
+      
       .dev-info {
         font-family: 'Outfit', sans-serif;
-        font-size: 7.5px; 
+        font-weight: 100;
+        font-size: 10px; 
         color: white;
-        margin-top: 6vh;
+        margin-top: 2vh;
 
       }
 
@@ -163,7 +192,10 @@
     <div class="user-container">
       <img class="user-img" src="./images/image-avatar.png" alt="">
       <div class="user-info">
-        Creation of Jules Wyvern
+        Creation of 
+      </div>
+      <div class="user-name">
+        Jules Wyvern
       </div>
     </div>    
   </div>  
